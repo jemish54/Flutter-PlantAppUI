@@ -233,8 +233,8 @@ class HeaderWithSearchField extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Text(
-                    "Hi James !",
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    "Welcome !",
+                    style: Theme.of(context).textTheme.headline4?.copyWith(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
