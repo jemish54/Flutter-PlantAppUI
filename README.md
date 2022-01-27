@@ -4,4 +4,5 @@ An Online Plant Selling and Care App.
 
 ## ScreenShots
 
-![Home Screen](/assets/Plantacare-HomeScreen.jpg) ![Detail Screen](/assets/Plantacare-DetailScreen.jpg)
+![Home Screen](/assets/PlantaCare-HomeScreen.jpg) 
+![Detail Screen](/assets/PlantaCare-DetailScreen.jpg)
