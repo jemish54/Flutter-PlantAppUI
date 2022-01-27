@@ -98,45 +98,49 @@ class PlantCard extends StatelessWidget {
       child: Card(
         elevation: 8.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        child: Container(
-          width: width,
-          child: Column(children: [
-            Image(
-              image: AssetImage("assets/images/$image"),
-              fit: BoxFit.fitWidth,
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        "SAMANTHA",
-                      ),
-                      Spacer(),
-                      Text(
-                        "\$400",
-                        style: TextStyle(
-                            color: kPrimaryColor, fontWeight: FontWeight.w900),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 3.0),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "RUSSIA",
-                      style: TextStyle(
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.normal,
-                          color: kPrimaryColor),
-                    ),
-                  )
-                ],
+        child: InkWell(
+          onTap: () => Navigator.pushNamed(context, "/details"),
+          child: Container(
+            width: width,
+            child: Column(children: [
+              Image(
+                image: AssetImage("assets/images/$image"),
+                fit: BoxFit.fitWidth,
               ),
-            )
-          ]),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "SAMANTHA",
+                        ),
+                        Spacer(),
+                        Text(
+                          "\$400",
+                          style: TextStyle(
+                              color: kPrimaryColor,
+                              fontWeight: FontWeight.w900),
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 3.0),
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "RUSSIA",
+                        style: TextStyle(
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.normal,
+                            color: kPrimaryColor),
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ]),
+          ),
         ),
       ),
     );

@@ -14,17 +14,22 @@ class DetailsScreen extends StatelessWidget {
           Container(
             alignment: Alignment.topCenter,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SafeArea(
-                  child: Container(
-                    width: size.width * 0.3,
+                Container(
+                  height: size.height * 0.68,
+                  width: size.width * 0.3,
+                  child: SafeArea(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          padding: EdgeInsets.all(10),
-                          alignment: Alignment.topLeft,
+                          padding: EdgeInsets.all(15),
                           child: IconButton(
-                              onPressed: () {}, icon: Icon(Icons.arrow_back)),
+                            onPressed: () => Navigator.pop(context),
+                            icon: Icon(Icons.arrow_back),
+                          ),
                         ),
                         DetailButton(
                           icon: "sun.svg",
